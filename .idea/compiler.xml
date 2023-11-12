@@ -9,8 +9,5 @@
         <module name="Notenverwaltung" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Notenverwaltung" target="13" />
-    </bytecodeTargetLevel>
   </component>
 </project>
