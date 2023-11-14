@@ -1,31 +1,44 @@
 package com.example.notenverwaltung;
 
+import java.util.ArrayList;
+
 public class Grade {
 
-
-
-    public static void get(String[] args){
-    Getset obj = new Getset();
-
-    }
-
-}
-class Getset {
     private String nameGrade;
 
-    private String getNameGrade(){
+    private  int value;
+
+    private ArrayList <Grade> subGrade;
+
+    public Grade(String nameGrade) {
+        this.nameGrade = nameGrade;
+    }
+
+    public String getNameGrade() {
         return nameGrade;
     }
 
-    private  int grade;
-
-    private int getGrade(){
-        return grade;
+    public void setNameGrade(String nameGrade) {
+        this.nameGrade = nameGrade;
     }
 
-    public void gradeFinal  (int getGrade,String getNameGrade){
+    public int getValue() {
+        return value;
+    }
 
-        this.grade = getGrade;
-        this.nameGrade = getNameGrade;
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public ArrayList<Grade> getSubGrade() {
+        return subGrade;
+    }
+
+    public void setSubGrade(Grade subGrade) {
+        this.subGrade.add(subGrade);
+    }
+
+    public void removeSubGrade(String name){
+        //ToDo delete grade
     }
 }
