@@ -8,7 +8,7 @@ public class Grade {
 
     private  int value;
 
-    private ArrayList <Grade> subGrade;
+    private ArrayList <Grade> subGrade = new ArrayList<>();
 
     public Grade(String nameGrade) {
         this.nameGrade = nameGrade;
@@ -38,7 +38,13 @@ public class Grade {
         this.subGrade.add(subGrade);
     }
 
-    public void removeSubGrade(String name){
-        //ToDo delete grade
+    public void removeSubGrade(Grade subGrade){
+        this.subGrade.remove(subGrade);
+        //ToDo delete subgrade(habs versucht :(((gibt jetzt einen Test der nicht funktioniert xD)
+
+    }
+
+    public void addSubGrade(Grade grade){
+        this.subGrade.add(grade);
     }
 }
