@@ -40,7 +40,7 @@ public class Grade {
 
     public void removeSubGrade(Grade subGrade){
         this.subGrade.remove(subGrade);
-        //ToDo delete subgrade(habs versucht :(((gibt jetzt einen Test der nicht funktioniert xD)
+        //ToDo delete subgrade
 
     }
 

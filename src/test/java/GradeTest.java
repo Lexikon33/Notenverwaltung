@@ -18,7 +18,8 @@ public class GradeTest {
         if(grade.getSubGrade().size() != 1) {
             return false;
         }
-        grade.removeSubGrade(subGrade);
+        grade.removeSubGrade(grade1);
+
         if(grade.getSubGrade().size() != 0) {
             return false;
         }
