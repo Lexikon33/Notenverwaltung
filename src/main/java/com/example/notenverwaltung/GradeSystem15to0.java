@@ -2,41 +2,74 @@ package com.example.notenverwaltung;
 
 public class GradeSystem15to0 {
 
-    private int grade;
 
-    public GradeSystem15to0(int grade) {
+    public GradeSystem15to0( ) {
 
-        this.grade = grade;
+
     }
 
-    public int Grade(int Grade) {
+    public int procent(int note){
+        
+        int prozent = 0;
 
-        return Grade;
-    }
-
-    public int ausgebenNote() {
-
-        System.out.println("deine Note ist " + this.grade);
-        return 0;
-    }
-
-    public float getPercentvalue() {
-
-        float percent = 0;
-
-        if (this.grade == 0) {
-            percent = 7;
-        } else if (this.grade == 1) {
-            percent = 22;
-        } else if (this.grade == 2) {
-            percent = 32;
-        } else if (this.grade == 3) {
-            percent = 37;
-        } else{
-            return 42 + 5 * (this.grade - 4);
+        if (note == 0) {
+            prozent = 7;
+        } else if (note == 1) {
+            prozent = 22;
+        } else if (note == 2) {
+            prozent = 32;
+        } else if (note == 3) {
+            prozent = 37;
+        } else if (note == 4) {
+            prozent = 42;
+        } else if (note == 5) {
+            prozent = 47;
+        } else if (note == 6) {
+            prozent = 52;
+        } else if (note == 7) {
+            prozent = 57;
+        } else if (note == 8) {
+            prozent = 62;
+        } else if (note == 9) {
+            prozent = 67;
+        } else if (note == 10) {
+            prozent = 72;
+        } else if (note == 11) {
+            prozent = 77;
+        } else if (note == 12) {
+            prozent = 82;
+        } else if (note == 13) {
+            prozent = 87;
+        } else if (note == 14) {
+            prozent = 92;
+        } else if (note == 15) {
+            prozent = 97;
         }
 
+        return prozent;
+        
+    }
 
-        return (float) percent;
-    }}
-//@oleg mit Schleife machen
+    /*
+    public int getPercentvalue() {
+
+
+        int endgrade = 19;
+
+        int percent = 100;
+
+        int total;
+      if (percent <= 100 || percent >= 0)
+      {
+          for (int i = 0; i < 16; i++) {
+             if (percent < endgrade) {
+                 total++;
+             }
+
+          }
+      }
+       return  endgrade;
+    }
+    */
+}
+//@oleg mit Schleife machen schnell!!!!
