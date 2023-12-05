@@ -39,7 +39,8 @@ public class Grade {
         {
             for (int i = 0; i < subGrade.size(); i++) {
 
-                sum += subGrade.get(i).value;
+                Grade grade = subGrade.get(i);
+                sum += grade.getCalculatedValue();
             }
             avg = sum / subGrade.size();
 

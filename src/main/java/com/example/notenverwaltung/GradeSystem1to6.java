@@ -2,21 +2,9 @@ package com.example.notenverwaltung;
 
 public class GradeSystem1to6 {
 
-    private int grade;
-
-    //Konstruktor
-    public GradeSystem1to6(int grade) {
-        this.grade = grade;
-    }
 
 
-    public int ausgebenNote() {
-
-        return grade;
-    }
-
-
-    public float getProzentwert() {
+    public float getProzentgrade() {
 
         double percent = 0;
 
@@ -38,8 +26,5 @@ public class GradeSystem1to6 {
     }
 
 
-    protected double getwert() {
-        return grade;
-    }
 }
 

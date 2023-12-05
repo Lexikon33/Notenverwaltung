@@ -5,7 +5,6 @@ public class GradeSystem15to0 {
 
     public GradeSystem15to0( ) {
 
-
     }
 
     public int procent(int note){
