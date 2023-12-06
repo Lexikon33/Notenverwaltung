@@ -2,38 +2,25 @@ package com.example.notenverwaltung;
 
 public abstract class GradeSystem {
 
-    private int minGrade;
+    private Integer minGrade;
 
-    private int maxGrade;
+    private Integer maxGrade;
 
-    private int increment;
+    private Integer increment;
 
     private String name;
 
 
-
     public GradeSystem(int minGrade, int maxGrade , int increment, String name){
-        //TODO ?
+
+        this.minGrade = minGrade;
+
+        this.maxGrade = maxGrade;
+
+        this.increment = increment;
+
+        this.name = name;
     }
-
-    //public toPercentd(int Grade){
-        // TODO: 05.12.2023
-  // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public int getMinGrade() {
         return minGrade;
@@ -67,4 +54,5 @@ public abstract class GradeSystem {
         this.name = name;
     }
 
+    public abstract float toPercentd(int Grade);
 }

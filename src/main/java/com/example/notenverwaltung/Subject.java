@@ -3,6 +3,15 @@ package com.example.notenverwaltung;
 import java.util.ArrayList;
 
 public class Subject {
+    public Subject(String name) {
+        this.name = name;
+    }
+
+    private String name;
+
+    private Subject subject;
+
+    private ArrayList<Grade> grade;
 
     public String getName() {
         return name;
@@ -28,11 +37,6 @@ public class Subject {
         this.grade = grade;
     }
 
-    private String name;
-
-    private Subject subject;
-
-    private ArrayList<Grade> grade;
 
 
 }

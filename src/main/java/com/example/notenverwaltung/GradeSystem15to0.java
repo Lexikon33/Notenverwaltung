@@ -71,4 +71,4 @@ public class GradeSystem15to0 {
     }
     */
 }
-//@oleg mit Schleife machen schnell!!!!
+//@oleg Schleife  schnell!!!!

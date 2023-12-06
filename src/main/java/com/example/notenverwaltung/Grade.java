@@ -31,6 +31,7 @@ public class Grade {
     }
 
     public double getCalculatedValue() {
+
         int sum = 0;
 
         double avg = 0;
@@ -65,8 +66,11 @@ public class Grade {
     public void removeSubGrade(String nameGrade){
 
         for (int i = 0; i < subGrade.size(); i++) {
+
             if (subGrade.get(i).nameGrade.equals(nameGrade)) {
+
                 this.subGrade.remove(i);
+
                 return;
             }
         }

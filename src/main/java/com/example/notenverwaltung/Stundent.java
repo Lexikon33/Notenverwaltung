@@ -4,6 +4,20 @@ import java.util.ArrayList;
 
 public class Stundent {
 
+
+
+    private String Name;
+
+    private ArrayList<Subject> subject;
+
+    private ArrayList<Grade> grades;
+
+
+    public Stundent(String name) {
+        Name = name;
+
+    }
+
     public String getName() {
         return Name;
     }
@@ -28,11 +42,6 @@ public class Stundent {
         this.grades = grades;
     }
 
-    private String Name;
-
-    private ArrayList<Subject> subject;
-
-    private ArrayList<Grade> grades;
 
     public void removeGrade(Subject subject){
          //remove Grade from subject;

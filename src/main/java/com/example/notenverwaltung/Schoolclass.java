@@ -57,10 +57,14 @@ public class Schoolclass {
     }
 
     public void outputAverageGrade(Subject subject) {
-        // math 20+20=41
+        // math 20+21=42
     }
 
     public void addStudent(Stundent stundent){
         //todo start here!!!!!!!!
+    }
+
+    public void addSubject(Subject subject) {
+        // TODO: 06.12.2023  
     }
 }
