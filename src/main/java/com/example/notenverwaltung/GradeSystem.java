@@ -55,4 +55,8 @@ public abstract class GradeSystem {
     }
 
     public abstract float toPercentd(int Grade);
+
+    public abstract String floatToString(float string);
+
+    public abstract String intToString(int string);
 }

@@ -44,6 +44,7 @@ public class Stundent {
 
 
     public void removeGrade(Subject subject){
+
          //remove Grade from subject;
 
     }

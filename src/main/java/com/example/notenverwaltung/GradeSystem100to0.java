@@ -2,27 +2,29 @@ package com.example.notenverwaltung;
 
 public class GradeSystem100to0 {
 
-    private int grade;
+
 
     public GradeSystem100to0(int grade) {
-
-        this.grade = grade;
+        super(0,100,1,"gradeSystem100to0");
     }
 
-    public int Grade(int Grade) {
-
+    @Override
+    public float toPercentd(int Grade) {
         return Grade;
     }
 
-    public int ausgebenNote() {
+    public String floatToString(float flaot){
 
-        System.out.println("deine Note ist " + this.grade);
-        return 0;
+        String string = Float.toString(flaot);
+
+        return string;
     }
 
-    public int getPercentvalue() {
+    public String intToString(int inte){
 
-        return grade;
+        String string = Integer.toString(inte);
+
+        return string;
     }
 }
 

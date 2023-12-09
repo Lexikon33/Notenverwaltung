@@ -56,15 +56,18 @@ public class Schoolclass {
         this.gradeSystem = gradeSystem;
     }
 
-    public void outputAverageGrade(Subject subject) {
-        // math 20+21=42
+    public void outputAverageGrade() {
+// TODO: 09.12.2023 arbeit für schmitti
+
     }
+        // blueMeth 20+21=42
+
 
     public void addStudent(Stundent stundent){
         //todo start here!!!!!!!!
     }
 
-    public void addSubject(Subject subject) {
-        // TODO: 06.12.2023  
+    public void addSubject(Subject subjectNew) {
+        subject.add(subjectNew);
     }
 }

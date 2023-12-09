@@ -2,13 +2,14 @@ package com.example.notenverwaltung;
 
 public class GradeSystem1to6 extends  GradeSystem{
 
-public double grade;
+public float grade;
 
     public GradeSystem1to6() {
         super(1, 6, 1, "gradeSystem1to6");
     }
 
-    public float getProzentgrade() {
+    @Override
+    public float toPercentd(int Grade) {
 
         float percent = 0;
 
@@ -29,10 +30,19 @@ public double grade;
         return percent;
     }
 
+    public String floatToString(float flaot){
 
-    @Override
-    public float toPercentd(int Grade) {
-        return 0;
+        String string = Float.toString(flaot);
+
+        return string;
     }
+
+    public String intToString(int inte){
+
+        String string = Integer.toString(inte);
+
+        return string;
+    }
+
 }
 
