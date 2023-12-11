@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Schoolclass {
+
     private String name;
 
     private ArrayList<Stundent> stundents;
@@ -57,11 +58,29 @@ public class Schoolclass {
     }
 
     public void outputAverageGrade() {
-// TODO: 09.12.2023 arbeit für schmitti
+
+        Grade grade = new Grade("getCalculatedValue");
+
+        grade.getCalculatedValue();
+        // TODO: >->
+
 
     }
-        // blueMeth 20+21=42
 
+    public void getStudentGrade(Student studentt){
+
+        for (int i = 0; i < stundent.size(); i++) {
+            if (stundent.get(i).getName().equals(studentt.getName())) {
+
+                Grade grade = new Grade("name");
+
+                //grade.getValue(i);todo dont noo
+                return;
+            }
+        }
+
+    }
+    // blueMeth 20+21=42
 
     public void addStudent(Stundent stundent){
         //todo start here!!!!!!!!
