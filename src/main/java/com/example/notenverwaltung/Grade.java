@@ -1,6 +1,7 @@
 package com.example.notenverwaltung;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Grade {
 
@@ -32,7 +33,7 @@ public class Grade {
 
     public double getCalculatedValue() {
 
-        int sum = 0;
+        double sum = 0;
 
         double avg = 0;
 
@@ -59,8 +60,8 @@ public class Grade {
         return subGrade;
     }
 
-    public void addSubGrade(Grade subGrade) {
-        this.subGrade.add(subGrade);
+    public void addSubGrade(Grade ... subGrade) {
+        this.subGrade.addAll(List.of(subGrade));
     }
 
     public void removeSubGrade(String nameGrade){

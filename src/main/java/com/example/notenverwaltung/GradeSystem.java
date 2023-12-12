@@ -54,9 +54,9 @@ public abstract class GradeSystem {
         this.name = name;
     }
 
-    public abstract float toPercentd(int Grade);
+    public abstract float toPercent(int Grade);
 
-    public abstract String floatToString(float string);
+  /*  public abstract String floatToString(float string);
 
-    public abstract String intToString(int string);
+    public abstract String intToString(int string);*/
 }

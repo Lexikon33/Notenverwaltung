@@ -1,8 +1,9 @@
 package com.example.notenverwaltung;
 //package private String name;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Stundent {
+public class Student {
 
 
 
@@ -13,7 +14,7 @@ public class Stundent {
     private ArrayList<Grade> grades;
 
 
-    public Stundent(String name) {
+    public Student(String name) {
         Name = name;
 
     }
@@ -30,16 +31,16 @@ public class Stundent {
         return subject;
     }
 
-    public void setSubject(ArrayList<Subject> subject) {
-        this.subject = subject;
+    public void addSubject(ArrayList<Subject> subject) {
+        this.subject.addAll(subject);
     }
 
     public ArrayList<Grade> getGrades() {
         return grades;
     }
 
-    public void setGrades(ArrayList<Grade> grades) {
-        this.grades = grades;
+    public void addGrade(Grade ... grade) {
+        this.grades.addAll(List.of(grade));
     }
 
 

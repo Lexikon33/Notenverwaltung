@@ -9,7 +9,7 @@ public float grade;
     }
 
     @Override
-    public float toPercentd(int Grade) {
+    public float toPercent(int Grade) {
 
         float percent = 0;
 
@@ -30,7 +30,7 @@ public float grade;
         return percent;
     }
 
-    public String floatToString(float flaot){
+    /*public String floatToString(float flaot){
 
         String string = Float.toString(flaot);
 
@@ -42,7 +42,8 @@ public float grade;
         String string = Integer.toString(inte);
 
         return string;
-    }
+        // TODO: 12.12.2023 Tostring
+    }*/
 
 }
 

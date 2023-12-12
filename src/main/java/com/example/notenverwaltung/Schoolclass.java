@@ -7,7 +7,7 @@ public class Schoolclass {
 
     private String name;
 
-    private ArrayList<Stundent> stundents;
+    private ArrayList<Student> stundents;
 
     private GradeSystem gradeSystem;
 
@@ -21,11 +21,11 @@ public class Schoolclass {
         this.name = name;
     }
 
-    public ArrayList<Stundent> getStundents() {
+    public ArrayList<Student> getStundents() {
         return stundents;
     }
 
-    public void setStundents(ArrayList<Stundent> stundents) {
+    public void setStundents(ArrayList<Student> stundents) {
         this.stundents = stundents;
     }
 
@@ -45,9 +45,9 @@ public class Schoolclass {
         this.subject = subject;
     }
 
-    public Schoolclass(String name, ArrayList<Stundent> stundents, GradeSystem gradeSystem, ArrayList<Subject> subject) {
+    public Schoolclass(String name, ArrayList<Student> students, GradeSystem gradeSystem, ArrayList<Subject> subject) {
         this.name = name;
-        this.stundents = stundents;
+        this.stundents = students;
         this.gradeSystem = gradeSystem;
         this.subject = subject;
     }
@@ -67,10 +67,10 @@ public class Schoolclass {
 
     }
 
-    public void getStudentGrade(Student studentt){
+   /* public void getStudentGrade(Student student){
 
-        for (int i = 0; i < stundent.size(); i++) {
-            if (stundent.get(i).getName().equals(studentt.getName())) {
+        for (int i = 0; i < student.size(); i++) {
+            if (student.get(i).getName().equals(student.getName())) {
 
                 Grade grade = new Grade("name");
 
@@ -79,14 +79,12 @@ public class Schoolclass {
             }
         }
 
-    }
+    }*/
     // blueMeth 20+21=42
 
-    public void addStudent(Stundent stundent){
+    public void addStudent(Student student){
         //todo start here!!!!!!!!
     }
 
-    public void addSubject(Subject subjectNew) {
-        subject.add(subjectNew);
-    }
+
 }

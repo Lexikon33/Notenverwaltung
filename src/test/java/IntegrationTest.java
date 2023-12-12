@@ -5,12 +5,36 @@ public class IntegrationTest {
 
         GradeSystem gradeSystem = new GradeSystem1to6();
 
-        Schoolclass schoolclass = new Schoolclass("12Fos",  gradeSystem);
+        Schoolclass schoolclass = new Schoolclass("12Fos", gradeSystem);
 
-        Stundent stundent = new Stundent("joe");
+        Student student = new Student("joe");
 
         Subject subject = new Subject("Math");
 
-        schoolclass.addSubject(subject);
+        SubjectGrade math = new SubjectGrade("gesammt note mathe");
+
+        Grade grade =  new Grade("mündlich");
+
+        Grade grade1 =  new Grade("Schriftlich");
+
+        Grade grade2 =  new Grade("Mündlich12.12");
+
+        Grade grade3 =  new Grade("Schriftlich 12.12");
+
+        grade3.setValue(6);
+
+        grade2.setValue(5);
+
+        grade.addSubGrade(grade2);
+
+        grade1.addSubGrade(grade3);
+
+        math.setSubject(subject);
+
+        math.addSubGrade(grade,grade1);
+
+        student.addSubject(subject);
+
+        System.out.printf("Value: " + math.getCalculatedValue() + math.toPercent);
     }
 }
