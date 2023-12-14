@@ -21,9 +21,9 @@ public class IntegrationTest {
 
         Grade grade3 =  new Grade("Schriftlich 12.12");
 
-        grade3.setValue(6);
+        grade3.setValue(7);
 
-        grade2.setValue(5);
+        grade2.setValue(1);
 
         grade.addSubGrade(grade2);
 
