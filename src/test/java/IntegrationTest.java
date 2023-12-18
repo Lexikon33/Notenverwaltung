@@ -35,6 +35,9 @@ public class IntegrationTest {
 
         student.addSubject(subject);
 
-        System.out.printf("Value: " + math.getCalculatedValue() + math.pimmeltoPercent);
+        System.out.printf("Value: " + math.getCalculatedValue() + " Grade ;"+ gradeSystem.toPercent((int) math.getCalculatedValue()) + "Percent");
+
+        System.out.printf("");
+
     }
 }

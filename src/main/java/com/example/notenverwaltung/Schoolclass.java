@@ -1,4 +1,5 @@
 package com.example.notenverwaltung;
+import java.util.Collections;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -64,32 +65,39 @@ public class Schoolclass {
 
     public void outputAverageGrade() {
 
-        Grade grade = new Grade("getCalculatedValue");
+      SubjectGrade subjectGrade = new SubjectGrade("durchschnitt");
+        subjectGrade.getCalculatedValue();
+    }
 
-        grade.getCalculatedValue();
-        // TODO: >->
-
+    public void getStudentGrade(){
+        int index = 0; 
+        getStundents().get(index).getGrades();
 
     }
 
-   /* public void getStudentGrade(Student student){
+    public void getStudentSortedByLastName(){
 
-        for (int i = 0; i < student.size(); i++) {
-            if (student.get(i).getName().equals(student.getName())) {
+       ArrayList<String> array = new ArrayList<String>();
 
-                Grade grade = new Grade("name");
-
-                //grade.getValue(i);todo dont noo
-                return;
-            }
+        for (int i = 0; i < stundents.size(); i++) {
+          array.add(String.valueOf(getStundents().get(i)));
         }
-
-    }*/
-    // blueMeth 20+21=42
-
-    public void addStudent(Student student){
-        //todo start here!!!!!!!!
+        Collections.sort(array);
+        for (int i = 0; i < array.size(); i++) {
+            System.out.printf("Students:" + array.get(i));
+        }
     }
 
+    public void getStudentsWithGrade(){
+        for (int i = 0; i < stundents.size(); i++) {
+            System.out.printf("Student:" + stundents.get(i).getName() +"Grade:"+ stundents.get(i).getGrades());
+        }
+    }
 
+    public void toString(String name){
+
+
+    }
+
+    // blueMeth 20+21=42
 }

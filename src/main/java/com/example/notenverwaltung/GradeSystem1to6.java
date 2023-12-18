@@ -13,37 +13,22 @@ public float grade;
 
         float percent = 0;
 
-        if (this.grade == 1) {
-            percent = 98;
-        } else if (this.grade == 2) {
+        if (Grade == 1) {
+            percent = 100;
+        } else if (Grade == 2) {
             percent = 87.5f;
-        } else if (this.grade == 3) {
+        } else if (Grade == 3) {
             percent = 69.5f;
-        } else if (this.grade == 4) {
+        } else if (Grade == 4) {
             percent = 52;
-        } else if (this.grade == 5) {
+        } else if (Grade == 5) {
             percent = 30;
-        } else if (this.grade == 6) {
+        } else if (Grade == 6) {
             percent = 7.5f;
         }
 
         return percent;
     }
-
-    /*public String floatToString(float flaot){
-
-        String string = Float.toString(flaot);
-
-        return string;
-    }
-
-    public String intToString(int inte){
-
-        String string = Integer.toString(inte);
-
-        return string;
-        // TODO: 12.12.2023 Tostring
-    }*/
 
 }
 
