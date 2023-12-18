@@ -6,6 +6,11 @@ import java.util.List;
 public class Student {
 
 
+    public Student(String name, ArrayList<Subject> subject, ArrayList<Grade> grades) {
+        Name = name;
+        this.subject = subject;
+        this.grades = grades;
+    }
 
     private String Name;
 
@@ -13,11 +18,6 @@ public class Student {
 
     private ArrayList<Grade> grades;
 
-
-    public Student(String name) {
-        Name = name;
-
-    }
 
     public String getName() {
         return Name;
