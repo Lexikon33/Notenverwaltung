@@ -13,6 +13,8 @@ public class Schoolclass {
 
     private ArrayList<Subject> subject;
 
+
+    //getter & setter
     public String getName() {
         return name;
     }
@@ -21,6 +23,7 @@ public class Schoolclass {
         this.name = name;
     }
 
+    //getter & setter
     public ArrayList<Student> getStundents() {
         return stundents;
     }
@@ -29,6 +32,7 @@ public class Schoolclass {
         this.stundents = stundents;
     }
 
+    //getter & setter
     public GradeSystem getGradeSystem() {
         return gradeSystem;
     }
@@ -37,6 +41,7 @@ public class Schoolclass {
         this.gradeSystem = gradeSystem;
     }
 
+    //getter & setter
     public ArrayList<Subject> getSubject() {
         return subject;
     }

@@ -15,6 +15,7 @@ public class Grade {
         this.nameGrade = nameGrade;
     }
 
+    //getter & setter
     public String getNameGrade() {
         return nameGrade;
     }
@@ -23,7 +24,7 @@ public class Grade {
         this.nameGrade = nameGrade;
     }
 
-    public int getValue() {
+    public Integer getValue() {
         return value;
     }
 
@@ -31,6 +32,7 @@ public class Grade {
         this.value = value;
     }
 
+    //Wertberechnung
     public double getCalculatedValue() {
 
         double sum = 0;

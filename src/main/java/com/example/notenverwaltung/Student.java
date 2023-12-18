@@ -43,17 +43,17 @@ public class Student {
         this.grades.addAll(List.of(grade));
     }
 
-
+    //remove Grade from subject;
     public void removeGrade(Subject subject){
 
-         //remove Grade from subject;
+
 
     }
 
     public void addSubject(Subject subject){
-        //add subject
-    }
 
+    }
+    //add subject
     public void addSubjects(ArrayList<Subject> subjects){
 
     }

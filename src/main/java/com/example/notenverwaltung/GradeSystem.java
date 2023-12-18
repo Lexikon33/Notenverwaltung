@@ -10,7 +10,7 @@ public abstract class GradeSystem {
 
     private String name;
 
-
+    //Konstruktor
     public GradeSystem(int minGrade, int maxGrade , int increment, String name){
 
         this.minGrade = minGrade;
@@ -21,7 +21,7 @@ public abstract class GradeSystem {
 
         this.name = name;
     }
-
+    //getter & setter
     public int getMinGrade() {
         return minGrade;
     }
@@ -30,6 +30,7 @@ public abstract class GradeSystem {
         this.minGrade = minGrade;
     }
 
+    //getter & setter
     public int getMaxGrade() {
         return maxGrade;
     }
@@ -38,6 +39,7 @@ public abstract class GradeSystem {
         this.maxGrade = maxGrade;
     }
 
+    //getter & setter
     public int getIncrement() {
         return increment;
     }
@@ -46,6 +48,7 @@ public abstract class GradeSystem {
         this.increment = increment;
     }
 
+    //getter & setter
     public String getName() {
         return name;
     }
